@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 38a273a41b50cde4ba70d08b9483fdfb
+timeCreated: 1482381257
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Raider Crusader Condensed
+  fontNames:
+  - Raider Crusader Condensed
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

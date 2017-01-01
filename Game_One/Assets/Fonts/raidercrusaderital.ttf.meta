@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c0fad113c0e966444ab8628f4c49bf82
+timeCreated: 1482381257
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Raider Crusader Italic
+  fontNames:
+  - Raider Crusader Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
