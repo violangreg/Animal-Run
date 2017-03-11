@@ -73,6 +73,11 @@ public class PlayerManager : MonoBehaviour
                 _grounded = false;
             }
         }
+
+		if (Input.GetKeyDown(KeyCode.Escape)) 
+		{ 
+			Application.Quit(); 
+		}
     }
 
     /// <summary>
