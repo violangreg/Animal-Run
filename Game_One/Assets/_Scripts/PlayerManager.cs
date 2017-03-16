@@ -23,7 +23,7 @@ public class PlayerManager : MonoBehaviour
     private AudioSource _jumpSound, _dyingSound;
     private bool _jumping, _grounded, _jumpSoundPlayed, _dead, _buttonHeld, _start;
     private float _speed, _jumpTimeCounter, _speedMilestoneCount, _timeMouseDown;
-    private GameObject _instructions;
+	private GameObject _instructions;
 
     public float speedX, speedMultiplier, speedIncreaseMilestone, jumpSpeedY, jumpTime;
     public ScoreManager scoreManager;
@@ -148,7 +148,7 @@ public class PlayerManager : MonoBehaviour
             }
 
             _dead = true;                                                               // set player dead
-            scoreManager.displayRestartUI();                                            // display the RestartUI
+			scoreManager.ToggleRestartUIDisplay();                                            // display the RestartUI
         }
 
     }
@@ -208,5 +208,9 @@ public class PlayerManager : MonoBehaviour
         _jumpTimeCounter = 0;
     }
 
+	public bool isDead()
+	{
+		return _dead;
+	}
 }
 

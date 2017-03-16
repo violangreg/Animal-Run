@@ -2,11 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\PauseManager.cs">
     <Files>
-      <File FileName="Assets\_Scripts\ChangeScene.cs" Line="26" Column="10" />
-      <File FileName="Assets\_Scripts\PlayerManager.cs" Line="176" Column="73" />
-      <File FileName="Assets\_Scripts\ScoreManager.cs" Line="10" Column="36" />
-      <File FileName="Assets\_Scripts\Sound.cs" Line="10" Column="2" />
-      <File FileName="Assets\_Scripts\PauseManager.cs" Line="27" Column="30" />
+      <File FileName="Assets\_Scripts\ChangeScene.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\PlayerManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\ScoreManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\Sound.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\PauseManager.cs" Line="50" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

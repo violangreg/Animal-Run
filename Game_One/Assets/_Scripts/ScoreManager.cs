@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour {
 
     private float _scoreCount, _highScore;
-    private bool _show;
+    private bool _show, _displayRestartUI;
     public AudioSource _scoreAudio;
     public Text score, endScore, highScore, endScoreText, highScoreText;
     GameObject restartUI;
@@ -17,6 +17,7 @@ public class ScoreManager : MonoBehaviour {
         _scoreCount = 0f;
         _highScore = PlayerPrefs.GetFloat("HighScore");
         _show = true;
+		_displayRestartUI = false;
         score.gameObject.SetActive(false);
         restartUI.gameObject.SetActive(false);
     }
@@ -53,18 +54,36 @@ public class ScoreManager : MonoBehaviour {
             _show = true;
         }
     }
-    public bool IsShow()
-    {
-        return _show;
-    }
 
-    public float GetScore()
-    {
-        return _scoreCount;
-    }
+	public void ToggleRestartUIDisplay()
+	{
+		if (_displayRestartUI) 
+		{
+			restartUI.gameObject.SetActive (false);
+			_displayRestartUI = false;
+		}
+		else
+		{
+			restartUI.gameObject.SetActive(true);
+			_displayRestartUI = true;
+		}
+	}
+	public bool IsDisplayRestartUI()
+	{
+		return _displayRestartUI;
+	}
+		
+	public bool IsShow()
+	{
+		return _show;
+	}
 
-    public void displayRestartUI()
-    {
-        restartUI.gameObject.SetActive(true);
-    }
+	public float GetScore()
+	{
+		return _scoreCount;
+	}
+	public void displayRestartUI()
+	{
+		restartUI.gameObject.SetActive (true);
+	}
 }
