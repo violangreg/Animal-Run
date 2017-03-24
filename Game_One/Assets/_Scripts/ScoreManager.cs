@@ -85,5 +85,6 @@ public class ScoreManager : MonoBehaviour {
 	public void displayRestartUI()
 	{
 		restartUI.gameObject.SetActive (true);
+		_displayRestartUI = true;
 	}
 }

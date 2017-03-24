@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// not used
+
 public class CameraMovement : MonoBehaviour {
-	public GameObject player;
-	private Vector3 offset;
+	public GameObject player;			// Is the object that we're gonna pan our camera focus on
+	private Vector3 offset;				// Is the offset 
 
 	// Use this for initialization
 	void Start () {

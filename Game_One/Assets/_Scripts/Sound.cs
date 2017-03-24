@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Sound : MonoBehaviour {
 	
-	public bool _tog;
+	private bool _tog;
 
 	void Start() 
 	{

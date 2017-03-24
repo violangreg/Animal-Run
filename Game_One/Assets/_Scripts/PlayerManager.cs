@@ -118,7 +118,7 @@ public class PlayerManager : MonoBehaviour
     /// <param name="other"></param>
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Objects")
+        if (other.gameObject.tag == "Ground")
         {
             _anim.SetInteger("State", 0);
             _jumping = false;
@@ -148,7 +148,8 @@ public class PlayerManager : MonoBehaviour
             }
 
             _dead = true;                                                               // set player dead
-			scoreManager.ToggleRestartUIDisplay();                                            // display the RestartUI
+
+			scoreManager.displayRestartUI ();                                            // display the RestartUI
         }
 
     }
