@@ -33,12 +33,15 @@ public class ObjectPooler : MonoBehaviour
 			{
 				return _pooledObjects [i];
 			}
+
 		}
 
 		// makes sure there is a game object in the list
 		GameObject obj = (GameObject) Instantiate (pooledObject);
 		obj.SetActive (false);
 		_pooledObjects.Add (obj);
+
+		Debug.Log ("test");
 		return obj;
 
 	}

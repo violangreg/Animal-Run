@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Global Sound toggler
 public class Sound : MonoBehaviour {
 	
 	private bool _tog;

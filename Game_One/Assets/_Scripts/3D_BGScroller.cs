@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// NOT USED
+
 public class Scrolling : MonoBehaviour {
 	public float speed = 0.5f;
 

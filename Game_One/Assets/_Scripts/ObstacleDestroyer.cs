@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class ObstacleDestroyer : MonoBehaviour {
 
     private GameObject _destroyerPoint;
+	private float originX, originY;
 
     // Use this for initialization
     void Start ()
