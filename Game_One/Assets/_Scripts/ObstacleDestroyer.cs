@@ -5,7 +5,6 @@ using UnityEngine.UI;
 public class ObstacleDestroyer : MonoBehaviour {
 
     private GameObject _destroyerPoint;
-	private float originX, originY;
 
     // Use this for initialization
     void Start ()
@@ -15,9 +14,9 @@ public class ObstacleDestroyer : MonoBehaviour {
 
 	void Update()
 	{
-		if (transform.position.x < _destroyerPoint.transform.position.x) 
+		if (this.transform.position.x < _destroyerPoint.transform.position.x) 
 		{
-			gameObject.SetActive (false);
+			Destroy (this.gameObject);
 		}
 	}
 
