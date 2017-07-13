@@ -13,3 +13,11 @@ Problem:
 Solution:
 - Resetting snowball position (did not work)
 - Don't use objectPool, just generate and destroy (compensation = memory) [will try] 
+
+
+Update 7/12/17
+- Snowball is up and working
+
+Problem fixed by:
+- instantiating and destroying the snowball at a spawning and destroying point instead of pooling it. 
+(since snowball is not spawned as much as the pipes, memory is not used a lot)
