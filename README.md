@@ -27,4 +27,4 @@ Next update:
   - Make a slide control and make pipes have gaps underneath? (doesn't really solve the problem as the 
     snowball can be spawned under as well but will make the game more challenging).
   - Make a missle weapon that can destroy the snowball? Make it limited to one shot per 5 second so they only have one try?
-- Work on a scoreboard such as the Google Play.
+- Work on a scoreboard such as the Google Play features (look up online).
