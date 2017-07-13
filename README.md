@@ -21,3 +21,10 @@ Update 7/12/17
 Problem fixed by:
 - instantiating and destroying the snowball at a spawning and destroying point instead of pooling it. 
 (since snowball is not spawned as much as the pipes, memory is not used a lot)
+
+Next update:
+- Work on figuring out how a snowball wont overlap with a pipe so that way theres a way to get by.
+  - Make a slide control and make pipes have gaps underneath? (doesn't really solve the problem as the 
+    snowball can be spawned under as well but will make the game more challenging).
+  - Make a missle weapon that can destroy the snowball? Make it limited to one shot per 5 second so they only have one try?
+- Work on a scoreboard such as the Google Play.
