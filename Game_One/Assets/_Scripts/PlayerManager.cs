@@ -136,21 +136,47 @@ public class PlayerManager : MonoBehaviour
         // when the player collides with an object tagged as "Objects", it dies
         if (other.gameObject.tag == "Objects")
         {
-            _anim.SetInteger("State", 4);
-
-            speedX = 0;                                                                 // set speed to 0
-            _grounded = false;                                                          // set grounded to false so the player can't jump anymore
-
-            // play dying sound
-            if (!_dead)
-            {
-                _dyingSound.Play();
-            }
-
-            _dead = true;                                                               // set player dead
-
-			scoreManager.displayRestartUI ();                                            // display the RestartUI
+			Dying ();
         }
+
+		Collider2D collider = other.collider; // collider of object that is gonna collide with the Player
+		float rectWidth = this.GetComponent<Collider2D> ().bounds.size.x; // width of Player box collider
+		float rectHeight = this.GetComponent<Collider2D> ().bounds.size.y; // height of Player box collider
+
+		if (other.gameObject.tag == "Snowball") // find the object snowball 
+		{
+			//Dying ();
+
+
+			Vector3 contactPoint = other.contacts [0].point;
+			Vector3 center =  collider.bounds.center;
+
+			if (contactPoint.y > center.y && (contactPoint.x < center.x + rectWidth / 2 && contactPoint.x > center.x - rectWidth / 2 )) {
+				_myRigidBody.AddForce (transform.up * 500);
+				_jumping = false;
+				_grounded = true;
+				_jumpTimeCounter = jumpTime;
+			} 
+			else 
+			{
+				Dying ();
+			}
+			/*
+			else if(contactPoint.y < center.y && (contactPoint.x < center.x + rectWidth / 2 && contactPoint.x > center.x - rectWidth / 2 ))
+			{
+				Dying ();
+			}
+			else if(contactPoint.x > center.x && (contactPoint.y < center.y + rectHeight / 2 && contactPoint.y > center.y - rectHeight/ 2 ))
+			{
+				Dying ();
+			}
+			else if(contactPoint.x < center.x && (contactPoint.y < center.y + rectHeight / 2 && contactPoint.y > center.y - rectHeight/ 2 ))
+			{
+				Dying ();
+			}
+			*/
+
+		}
 
     }
     /// <summary>
@@ -212,6 +238,24 @@ public class PlayerManager : MonoBehaviour
 	public bool isDead()
 	{
 		return _dead;
+	}
+
+ 	void Dying()
+	{
+		_anim.SetInteger("State", 4);
+
+		speedX = 0;                                                                 // set speed to 0
+		_grounded = false;                                                          // set grounded to false so the player can't jump anymore
+
+		// play dying sound
+		if (!_dead)
+		{
+			_dyingSound.Play();
+		}
+
+		_dead = true;                                                               // set player dead
+
+		scoreManager.displayRestartUI ();                                            // display the RestartUI
 	}
 }
 
