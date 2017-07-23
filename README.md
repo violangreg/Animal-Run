@@ -28,3 +28,10 @@ Next update:
     snowball can be spawned under as well but will make the game more challenging).
   - Make a missle weapon that can destroy the snowball? Make it limited to one shot per 5 second so they only have one try?
 - Work on a scoreboard such as the Google Play features (look up online).
+
+Update 7/23/17
+- Snowball jumping implemented
+- Resets jumping when you jump on snowballs (giving the ability of double jump)
+
+Next update:
+- Work on a scoreboard such as the Google Play features (look up online).
