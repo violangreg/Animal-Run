@@ -98,15 +98,16 @@ public class PlayerManager : MonoBehaviour
             _anim.SetInteger("State", 0);
         }
 
-        // increasing speed of the player when it reaches the milestone 
+        // increasing speed of the player when it reaches the milestone, also incraese the distance between pipes to make it possible to jump
         // (making the game more harder the longer you play)
         if (transform.position.x > _speedMilestoneCount)
         {
             _speedMilestoneCount += speedIncreaseMilestone;
             speedIncreaseMilestone = speedIncreaseMilestone * speedMultiplier;
             speedX = speedX * speedMultiplier;
-            obsGen.distanceBetweenMinX = obsGen.distanceBetweenMinX * speedMultiplier;
-            obsGen.distanceBetweenMaxX = obsGen.distanceBetweenMaxX * speedMultiplier;
+
+			obsGen.distanceBetweenMinX = obsGen.distanceBetweenMinX * (speedMultiplier - 0.02f);
+			obsGen.distanceBetweenMaxX = obsGen.distanceBetweenMaxX * (speedMultiplier - 0.02f);
         }
 
         _speed = speedX;                                                                // auto run
@@ -154,6 +155,7 @@ public class PlayerManager : MonoBehaviour
 			if (contactPoint.y > center.y && (contactPoint.x < center.x + rectWidth / 2 && contactPoint.x > center.x - rectWidth / 2 )) {
 				_myRigidBody.AddForce (transform.up * 500);
 				_jumping = false;
+				_jumpSoundPlayed = false;
 				_grounded = true;
 				_jumpTimeCounter = jumpTime;
 			} 
@@ -256,6 +258,11 @@ public class PlayerManager : MonoBehaviour
 		_dead = true;                                                               // set player dead
 
 		scoreManager.displayRestartUI ();                                            // display the RestartUI
+	}
+
+	public bool start()
+	{
+		return _start;
 	}
 }
 

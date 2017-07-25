@@ -1,15 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\PlayerManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\BackgroundAudio.cs">
     <Files>
-      <File FileName="Assets\_Scripts\BGLooper.cs" Line="19" Column="21" />
-      <File FileName="Assets\_Scripts\CameraRunner.cs" Line="24" Column="2" />
+      <File FileName="Assets\_Scripts\BGLooper.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\CameraRunner.cs" Line="1" Column="1" />
       <File FileName="Assets\_Scripts\ObstacleDestroyer.cs" Line="1" Column="1" />
       <File FileName="Assets\_Scripts\ObstacleDeactivator.cs" Line="1" Column="1" />
       <File FileName="Assets\_Scripts\ObjectPooler.cs" Line="1" Column="1" />
       <File FileName="Assets\_Scripts\SnowGenerator.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Scripts\PlayerManager.cs" Line="156" Column="21" />
-      <File FileName="Assets\_Scripts\Snowball.cs" Line="20" Column="38" />
+      <File FileName="Assets\_Scripts\PlayerManager.cs" Line="110" Column="88" />
+      <File FileName="Assets\_Scripts\Snowball.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\BackgroundAudio.cs" Line="5" Column="47" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

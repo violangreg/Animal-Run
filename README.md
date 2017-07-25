@@ -35,3 +35,12 @@ Update 7/23/17
 
 Next update:
 - Work on a scoreboard such as the Google Play features (look up online).
+
+Update 7/24/17
+- Added Background audio
+- Reworked snowball spawn positioning
+- Last touches on background
+- Uploaded to GooglePlay
+
+Next update:
+- Work on a scoreboard such as the Google Play features (look up online).
