@@ -19,7 +19,7 @@ public class SnowGenerator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if(!player.isDead() && player.start())
+		if(!player.isDead() && player.gameStarted())
 		{
 			timer -= Time.deltaTime;
 

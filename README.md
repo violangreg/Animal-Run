@@ -44,3 +44,11 @@ Update 7/24/17
 
 Next update:
 - Work on a scoreboard such as the Google Play features (look up online).
+
+Update 7/26/17
+- Added Achievement and leaderboard  (need to be tested.. had problems with android sdk pathing)
+
+Next update:
+- Add more content?
+- Polish game?
+- Advertisements?

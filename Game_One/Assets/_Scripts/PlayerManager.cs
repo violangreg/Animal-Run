@@ -78,6 +78,12 @@ public class PlayerManager : MonoBehaviour
 		{ 
 			Application.Quit(); 
 		}
+
+		// Unlock achievement when score reaches 50
+		if (scoreManager.GetScore () == 50f) 
+		{
+			GooglePlayScript.UnlockAchievement (GPGSIds.achievement_reach_50);
+		}
     }
 
     /// <summary>
@@ -242,8 +248,10 @@ public class PlayerManager : MonoBehaviour
 		return _dead;
 	}
 
- 	void Dying()
+ 	public void Dying()
 	{
+		GooglePlayScript.AddScoreToLeaderboard (GPGSIds.leaderboard_leaderboard, (long)scoreManager.GetScore());
+
 		_anim.SetInteger("State", 4);
 
 		speedX = 0;                                                                 // set speed to 0
@@ -260,7 +268,7 @@ public class PlayerManager : MonoBehaviour
 		scoreManager.displayRestartUI ();                                            // display the RestartUI
 	}
 
-	public bool start()
+	public bool gameStarted()
 	{
 		return _start;
 	}

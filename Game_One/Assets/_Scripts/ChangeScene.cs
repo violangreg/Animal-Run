@@ -29,4 +29,13 @@ public class ChangeScene : MonoBehaviour {
 
     }
 
+	public void ShowAchievements()
+	{
+		GooglePlayScript.ShowAchievementsUI ();
+	}
+
+	public void ShowLeaderboards()
+	{
+		GooglePlayScript.ShowLeaderboardsUI ();
+	}
 }
