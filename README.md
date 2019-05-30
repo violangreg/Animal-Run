@@ -1,5 +1,12 @@
 # AnimalRun_v2
-Cutesy endless runner game made with Unity
+Animal Run mobile game app - 6/16 – 12/16
+
+- Adorable animals running freely in a seamlessly endless world dodging obstacles that they encounter.
+- A mobile game app published on Android Google Play Store.
+- Utilized Unity for object scripting, graphic interface, and animations.
+- Documented, tracked code development with version-control GitHub.
+- Designed graphics using Sai Paint Tool and Adobe Illustrator.
+- Google Play Store link: play.google.com/store/apps/details?id=com.GregViolan.AnimalRun&hl=en.
 
 Update 3/28/17
 - Created snowball sprite
