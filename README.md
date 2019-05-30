@@ -1,5 +1,5 @@
 # AnimalRun_v2
-Animal Run mobile game app - 6/16 – 12/16
+Animal Run mobile game app - 6/16 – 10/17
 
 - Adorable animals running freely in a seamlessly endless world dodging obstacles that they encounter.
 - A mobile game app published on Android Google Play Store.
