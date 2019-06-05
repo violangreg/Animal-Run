@@ -5,7 +5,7 @@ Animal Run mobile game app - 6/16 – 10/17
 - A mobile game app published on Android Google Play Store.
 - Utilized Unity for object scripting, graphic interface, and animations.
 - Documented, tracked code development with version-control GitHub.
-- Designed graphics using Sai Paint Tool and Made by [Sarah Han](https://github.com/jihye13621) with Adobe Illustrator.
+- Designed graphics using Sai Paint Tool and [Sarah Han](https://github.com/jihye13621) made the environment with Adobe Illustrator.
 - [Google Play Store link](https://play.google.com/store/apps/details?id=com.GregViolan.AnimalRun&hl=en).
 
 Update 3/28/17
