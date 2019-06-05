@@ -6,7 +6,7 @@ Animal Run mobile game app - 6/16 – 10/17
 - Utilized Unity for object scripting, graphic interface, and animations.
 - Documented, tracked code development with version-control GitHub.
 - Designed graphics using Sai Paint Tool and Adobe Illustrator.
-- Google Play Store link: play.google.com/store/apps/details?id=com.GregViolan.AnimalRun&hl=en.
+- [Google Play Store link](https://play.google.com/store/apps/details?id=com.GregViolan.AnimalRun&hl=en).
 
 Update 3/28/17
 - Created snowball sprite
